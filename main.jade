@@ -1,0 +1,9 @@
+head
+  title Todo
+body
+  .container
+    header
+      h1 Todo List
+      form.new-task
+        input(type="text" name="text" placeholder="Enter a new task")
+    ul {{#each tasks}} {{> task}} {{/each}}
